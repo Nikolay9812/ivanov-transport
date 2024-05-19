@@ -1,9 +1,20 @@
 import React from 'react'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './Home/Home';
+import HeaderComp from './components/HeaderComp';
+import FooterComp from './components/FooterComp';
+import About from './About/About';
+
 
 export default function App() {
   return (
-    <div className="text-red-500 w-10 text-2xl">
-      <h2 className='text-4xl'>tralal  </h2>
-    </div>
+    <BrowserRouter>
+      <HeaderComp/>
+      <Routes>
+      <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+      </Routes>
+      <FooterComp/>
+    </BrowserRouter>
   )
 }

@@ -12,8 +12,8 @@ export default function Home() {
           <Banner />
           <News />
           <OurService />
-          <Processing />
           <Service />
+          <Processing />
           <ServiceAbout/>
       </>
   )

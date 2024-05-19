@@ -3,11 +3,11 @@ import React from "react";
 export default function News() {
   return (
     <div className="py-10">
-      <div className="text-center">
+      <div className="text-center p-6">
         <h2 className="text-first-color text-2xl md:text-3xl lg:text-4xl">
           Professional Warehouse
         </h2>
-        <h1 className="text-xl md:text-5xl lg:text-6xl">
+        <h1 className="text-xl md:text-3xl lg:text-4xl">
           Warehouse <span className="font-bold">solution</span> for every need
         </h1>
       </div>

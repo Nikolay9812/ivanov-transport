@@ -1,19 +1,38 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import LanguageSelector from "./LanguageSelector";
 
 export default function HeaderComp() {
   const location = useLocation();
-
   const [menuOpen, setMenuOpen] = useState(false);
+  const [headerBg, setHeaderBg] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
-  }
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setHeaderBg(true);
+      } else {
+        setHeaderBg(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <nav className="bg-white border-gray-200 dark:bg-gray-900">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 text-md ">
+    <nav
+      className={`fixed w-full z-[1000] transition-colors duration-300 ${
+        headerBg ? "bg-white shadow-lg" : "bg-transparent"
+      } border-gray-200 dark:bg-gray-900`}
+    >
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 text-md">
         <Link
           to="/"
           className="self-center whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white"
@@ -23,7 +42,7 @@ export default function HeaderComp() {
           </span>
           Transport
         </Link>
-        <LanguageSelector/>
+        <LanguageSelector />
         <button
           onClick={toggleMenu}
           className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -51,14 +70,14 @@ export default function HeaderComp() {
             menuOpen ? "block" : "hidden"
           } w-full md:block md:w-auto`}
         >
-          <ul className="uppercase flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <ul className="uppercase flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
               <Link
                 to="/"
                 className={`block py-2 px-3 rounded transition-colors ${
                   location.pathname === "/"
-                    ? "text-first-color border-b-2 border-first-color "
-                    : "text-gray-300 hover:border-b-2 hover:text-first-color border-first-color dark:text-white dark:hover:bg-gray-700"
+                    ? "text-first-color border-b-2 border-first-color"
+                    : "text-gray-800 hover:border-b-2 hover:text-first-color border-first-color dark:text-white dark:hover:bg-gray-700"
                 }`}
                 aria-current={location.pathname === "/" ? "page" : undefined}
               >
@@ -71,7 +90,7 @@ export default function HeaderComp() {
                 className={`block py-2 px-3 rounded transition-colors ${
                   location.pathname === "/vehicle-fleet"
                     ? "text-first-color border-b-2 border-first-color"
-                    : "text-gray-300 hover:border-b-2 hover:text-first-color border-first-color dark:text-white dark:hover:bg-gray-700"
+                    : "text-gray-700 hover:border-b-2 hover:text-first-color border-first-color dark:text-white dark:hover:bg-gray-700"
                 }`}
                 aria-current={
                   location.pathname === "/vehicle-fleet" ? "page" : undefined
@@ -86,7 +105,7 @@ export default function HeaderComp() {
                 className={`block py-2 px-3 rounded transition-colors ${
                   location.pathname === "/service"
                     ? "text-first-color border-b-2 border-first-color"
-                    : "text-gray-300 hover:border-b-2 hover:text-first-color border-first-color dark:text-white dark:hover:bg-gray-700"
+                    : "text-gray-700 hover:border-b-2 hover:text-first-color border-first-color dark:text-white dark:hover:bg-gray-700"
                 }`}
                 aria-current={
                   location.pathname === "/service" ? "page" : undefined
@@ -101,7 +120,7 @@ export default function HeaderComp() {
                 className={`block py-2 px-3 rounded transition-colors ${
                   location.pathname === "/about"
                     ? "text-first-color border-b-2 border-first-color"
-                    : "text-gray-300 hover:border-b-2 hover:text-first-color border-first-color dark:text-white dark:hover:bg-gray-700"
+                    : "text-gray-700 hover:border-b-2 hover:text-first-color border-first-color dark:text-white dark:hover:bg-gray-700"
                 }`}
                 aria-current={
                   location.pathname === "/about" ? "page" : undefined
@@ -116,7 +135,7 @@ export default function HeaderComp() {
                 className={`block py-2 px-3 rounded transition-colors ${
                   location.pathname === "/news"
                     ? "text-first-color border-b-2 border-first-color"
-                    : "text-gray-300 hover:border-b-2 hover:text-first-color border-first-color dark:text-white dark:hover:bg-gray-700"
+                    : "text-gray-700 hover:border-b-2 hover:text-first-color border-first-color dark:text-white dark:hover:bg-gray-700"
                 }`}
                 aria-current={
                   location.pathname === "/news" ? "page" : undefined
@@ -131,7 +150,7 @@ export default function HeaderComp() {
                 className={`block py-2 px-3 rounded transition-colors ${
                   location.pathname === "/shop"
                     ? "text-first-color border-b-2 border-first-color"
-                    : "text-gray-300 hover:border-b-2 hover:text-first-color border-first-color dark:text-white dark:hover:bg-gray-700"
+                    : "text-gray-700 hover:border-b-2 hover:text-first-color border-first-color dark:text-white dark:hover:bg-gray-700"
                 }`}
                 aria-current={
                   location.pathname === "/shop" ? "page" : undefined
@@ -146,7 +165,7 @@ export default function HeaderComp() {
                 className={`block py-2 px-3 rounded transition-colors ${
                   location.pathname === "/contact"
                     ? "text-first-color border-b-2 border-first-color"
-                    : "text-gray-300 hover:border-b-2 hover:text-first-color border-first-color dark:text-white dark:hover:bg-gray-700"
+                    : "text-gray-700 hover:border-b-2 hover:text-first-color border-first-color dark:text-white dark:hover:bg-gray-700"
                 }`}
                 aria-current={
                   location.pathname === "/contact" ? "page" : undefined

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import LanguageSelector from "./LanguageSelector";
+import { FaBars } from "react-icons/fa";
 
 export default function HeaderComp() {
   const location = useLocation();
@@ -49,21 +50,7 @@ export default function HeaderComp() {
           aria-expanded={menuOpen ? "true" : "false"}
         >
           <span className="sr-only">Open main menu</span>
-          <svg
-            className="w-5 h-5"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 17 14"
-          >
-            <path
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M1 1h15M1 7h15M1 13h15"
-            />
-          </svg>
+          <FaBars className="w-5 h-5" />
         </button>
         <div
           className={`${

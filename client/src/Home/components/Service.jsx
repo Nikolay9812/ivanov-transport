@@ -56,7 +56,7 @@ export default function Service() {
               alt="Service 1"
               className="w-full h-full object-cover rounded-lg"
             />
-            <div className="absolute top-0 left-0 w-full h-full bg-black scale-[0.97] scale-[0.97] rounded-lg bg-opacity-50 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div className="absolute top-0 left-0 w-full h-full bg-black scale-[0.97] rounded-lg bg-opacity-50 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <div className="absolute left-0 bottom-0 p-4 md:p-10">
                 <h3 className="text-lg sm:text-xl">Service 1</h3>
                 <p className="text-sm sm:text-lg">Description of service 1</p>

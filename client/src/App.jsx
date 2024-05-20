@@ -4,6 +4,8 @@ import Home from './Home/Home';
 import HeaderComp from './components/HeaderComp';
 import FooterComp from './components/FooterComp';
 import About from './About/About';
+import ScrollToTop from './components/ScrollToTop';
+import Scrollbar from './components/Scrollbar';
 
 
 export default function App() {
@@ -14,7 +16,9 @@ export default function App() {
       <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
       </Routes>
-      <FooterComp/>
+      <FooterComp />
+      <ScrollToTop />
+      <Scrollbar />
     </BrowserRouter>
   )
 }

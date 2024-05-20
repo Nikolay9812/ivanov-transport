@@ -11,7 +11,7 @@ export default function ServiceAbout() {
         />
       </div>
       <div className="relative w-full md:w-1/2 flex items-center">
-        <div className="relative p-6 md:p-16 bg-white md:-ml-20 lg:-ml-32 xl:-ml-40 shadow-lg">
+        <div className="relative md:py-[150px] p-16 bg-white md:-ml-20 lg:-ml-32 xl:-ml-40 shadow-lg">
           <h4 className="text-2xl md:text-4xl lg:text-5xl">
             Safe and on time delivery of your goods dolor sit amet
           </h4>

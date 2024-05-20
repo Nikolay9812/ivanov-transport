@@ -29,14 +29,14 @@ export default function HeaderComp() {
 
   return (
     <nav
-      className={`fixed w-full z-[1000] transition-colors duration-300 ${
-        headerBg ? "bg-white shadow-lg" : "bg-transparent"
-      } border-gray-200 dark:bg-gray-900`}
+      className={`fixed w-full z-[1000] transition-colors duration-300  ${
+        headerBg ? "bg-white text-black shadow-lg" : "bg-transparent"
+      } border-gray-200 dark:bg-gray-900 text-white`}
     >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 text-md">
         <Link
           to="/"
-          className="self-center whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white"
+          className="self-center whitespace-nowrap text-sm sm:text-xl font-semibold "
         >
           <span className="px-2 py-1 bg-gradient-to-r from-first-color via-first-color to-first-color-alt rounded transition-colors-lg text-white">
             Ivanov
@@ -64,7 +64,7 @@ export default function HeaderComp() {
                 className={`block py-2 px-3 rounded transition-colors ${
                   location.pathname === "/"
                     ? "text-first-color border-b-2 border-first-color"
-                    : "text-gray-800 hover:border-b-2 hover:text-first-color border-first-color dark:text-white dark:hover:bg-gray-700"
+                    : " hover:border-b-2 hover:text-first-color border-first-color dark:text-white dark:hover:bg-gray-700"
                 }`}
                 aria-current={location.pathname === "/" ? "page" : undefined}
               >
@@ -77,7 +77,7 @@ export default function HeaderComp() {
                 className={`block py-2 px-3 rounded transition-colors ${
                   location.pathname === "/vehicle-fleet"
                     ? "text-first-color border-b-2 border-first-color"
-                    : "text-gray-700 hover:border-b-2 hover:text-first-color border-first-color dark:text-white dark:hover:bg-gray-700"
+                    : " hover:border-b-2 hover:text-first-color border-first-color dark:text-white dark:hover:bg-gray-700"
                 }`}
                 aria-current={
                   location.pathname === "/vehicle-fleet" ? "page" : undefined
@@ -92,7 +92,7 @@ export default function HeaderComp() {
                 className={`block py-2 px-3 rounded transition-colors ${
                   location.pathname === "/service"
                     ? "text-first-color border-b-2 border-first-color"
-                    : "text-gray-700 hover:border-b-2 hover:text-first-color border-first-color dark:text-white dark:hover:bg-gray-700"
+                    : " hover:border-b-2 hover:text-first-color border-first-color dark:text-white dark:hover:bg-gray-700"
                 }`}
                 aria-current={
                   location.pathname === "/service" ? "page" : undefined
@@ -107,7 +107,7 @@ export default function HeaderComp() {
                 className={`block py-2 px-3 rounded transition-colors ${
                   location.pathname === "/about"
                     ? "text-first-color border-b-2 border-first-color"
-                    : "text-gray-700 hover:border-b-2 hover:text-first-color border-first-color dark:text-white dark:hover:bg-gray-700"
+                    : " hover:border-b-2 hover:text-first-color border-first-color dark:text-white dark:hover:bg-gray-700"
                 }`}
                 aria-current={
                   location.pathname === "/about" ? "page" : undefined
@@ -122,7 +122,7 @@ export default function HeaderComp() {
                 className={`block py-2 px-3 rounded transition-colors ${
                   location.pathname === "/news"
                     ? "text-first-color border-b-2 border-first-color"
-                    : "text-gray-700 hover:border-b-2 hover:text-first-color border-first-color dark:text-white dark:hover:bg-gray-700"
+                    : " hover:border-b-2 hover:text-first-color border-first-color dark:text-white dark:hover:bg-gray-700"
                 }`}
                 aria-current={
                   location.pathname === "/news" ? "page" : undefined
@@ -137,7 +137,7 @@ export default function HeaderComp() {
                 className={`block py-2 px-3 rounded transition-colors ${
                   location.pathname === "/shop"
                     ? "text-first-color border-b-2 border-first-color"
-                    : "text-gray-700 hover:border-b-2 hover:text-first-color border-first-color dark:text-white dark:hover:bg-gray-700"
+                    : " hover:border-b-2 hover:text-first-color border-first-color dark:text-white dark:hover:bg-gray-700"
                 }`}
                 aria-current={
                   location.pathname === "/shop" ? "page" : undefined
@@ -152,7 +152,7 @@ export default function HeaderComp() {
                 className={`block py-2 px-3 rounded transition-colors ${
                   location.pathname === "/contact"
                     ? "text-first-color border-b-2 border-first-color"
-                    : "text-gray-700 hover:border-b-2 hover:text-first-color border-first-color dark:text-white dark:hover:bg-gray-700"
+                    : " hover:border-b-2 hover:text-first-color border-first-color dark:text-white dark:hover:bg-gray-700"
                 }`}
                 aria-current={
                   location.pathname === "/contact" ? "page" : undefined

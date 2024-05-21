@@ -4,7 +4,7 @@ export default function OurService() {
   return (
     <div className="flex items-center justify-center py-16 px-4 md:px-0 relative">
       <img
-        src="/public/img/form-background.jpg"
+        src="/img/form-background.jpg"
         alt="form-background"
         className="h-full w-full absolute top-0 left-0 object-cover -z-50"
       />

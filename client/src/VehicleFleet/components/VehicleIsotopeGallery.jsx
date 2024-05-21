@@ -2,51 +2,51 @@
 import React, { useEffect, useRef, useState } from "react";
 import Isotope from "isotope-layout";
 
-export default function IsotopeGallery() {
+export default function VehicleIsotopeGallery() {
   const imageData = [
-    { id: 1, title: "Image 1", category: "All", src: "/public/img/car1.png" },
+    { id: 1, title: "Image 1", category: "All", src: "/img/car1.png" },
     {
       id: 2,
       title: "Image 2",
       category: "Short trucks",
-      src: "/public/img/car2.jpg",
+      src: "/img/car2.jpg",
     },
     {
       id: 3,
       title: "Image 3",
       category: "Prime trucks",
-      src: "/public/img/car3.jpg",
+      src: "/img/car3.jpg",
     },
-    { id: 4, title: "Image 4", category: "Vans", src: "/public/img/car4.png" },
+    { id: 4, title: "Image 4", category: "Vans", src: "/img/car4.png" },
     {
       id: 5,
       title: "Image 5",
       category: "Prime trucks",
-      src: "/public/img/car5.png",
+      src: "/img/car5.png",
     },
     {
       id: 6,
       title: "Image 6",
       category: "Big load trucks",
-      src: "/public/img/car6.png",
+      src: "/img/car6.png",
     },
     {
       id: 7,
       title: "Image 7",
       category: "Big load trucks",
-      src: "/public/img/car7.png",
+      src: "/img/car7.png",
     },
     {
       id: 8,
       title: "Image 8",
       category: "Big load trucks",
-      src: "/public/img/car8.png",
+      src: "/img/car8.png",
     },
     {
       id: 9,
       title: "Image 9",
       category: "Big load trucks",
-      src: "/public/img/car9.png",
+      src: "/img/car9.png",
     },
   ];
 

@@ -31,7 +31,7 @@ export default function HeaderComp() {
     <nav
       className={`fixed w-full z-[1000] transition-colors duration-300  ${
         headerBg ? "bg-white text-black shadow-lg" : "bg-transparent"
-      } border-gray-200 dark:bg-gray-900 text-white`}
+      } border-gray-200 dark:bg-gray-900 text-black`}
     >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 text-md">
         <Link

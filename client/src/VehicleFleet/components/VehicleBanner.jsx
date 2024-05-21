@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function Banner() {
+export default function VehicleBanner() {
   return (
     <div className="h-[70vh] relative flex items-end">
       <img
-        src="/public/img/vehicle-banner.jpg"
+        src="/img/vehicle-banner.jpg"
         alt="banner"
         className="absolute top-0 left-0 w-full h-full object-cover -z-50"
       />

@@ -5,7 +5,7 @@ export default function ServiceAbout() {
     <div className="min-h-screen flex flex-col md:flex-row relative">
       <div className="relative w-full md:w-1/2 h-64 md:h-auto">
         <img
-          src="/public/img/our-service-next.jpg"
+          src="/img/our-service-next.jpg"
           alt="Our Service"
           className="absolute inset-0 w-full h-full object-cover"
         />

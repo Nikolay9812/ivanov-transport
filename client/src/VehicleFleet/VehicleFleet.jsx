@@ -1,14 +1,14 @@
 import React from "react";
-import Banner from "./components/Banner";
-import IsotopeGallery from "./components/IsotopeGallery";
+import VehicleBanner from "./components/VehicleBanner";
 import VehicleAbout from "./components/VehicleAbout";
+import VehicleIsotopeGallery from "./components/VehicleIsotopeGallery";
 import VehicleContact from "./components/VehicleContact";
 
 export default function VehicleFleet() {
   return (
     <>
-      <Banner />
-          <IsotopeGallery />
+      <VehicleBanner />
+          <VehicleIsotopeGallery />
           <VehicleAbout />
           <VehicleContact/>
     </>

@@ -3,3 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 
+.parallax {
+    @apply relative h-[70vh] bg-no-repeat;
+    background-attachment: fixed;
+  }
+  
+  .parallax-content {
+    @apply relative z-10 flex items-end h-full;
+  }

@@ -25,8 +25,8 @@ function LanguageSelector() {
                   href="#"
                   className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   role="menuitem"
-                              >
-                                  <img src="https://img.freepik.com/free-photo/flag-insignia-globe-iconic-art_1172-428.jpg?t=st=1716111587~exp=1716115187~hmac=6915c5c60f5f2a5dd06f0a63dd737f4572d343e1204b9cd6d2ba54a1cb0fbab2&w=740https://cdn-icons-png.flaticon.com/128/197/197374.png" alt="" />
+                >
+                  <img src="/img/uk.webp" alt="" />
                   English (US)
                 </a>
               </li>

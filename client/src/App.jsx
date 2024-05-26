@@ -7,6 +7,7 @@ import About from './About/About';
 import ScrollToTop from './components/ScrollToTop';
 import Scrollbar from './components/Scrollbar';
 import VehicleFleet from './VehicleFleet/VehicleFleet';
+import Services from './Service/Services';
 
 
 export default function App() {
@@ -17,6 +18,7 @@ export default function App() {
       <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/vehicle-fleet' element={<VehicleFleet />} />
+        <Route path='/services' element={<Services />} />
       </Routes>
       <FooterComp />
       <ScrollToTop />

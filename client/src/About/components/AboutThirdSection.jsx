@@ -6,25 +6,25 @@ export default function AboutThirdSection() {
       name: "John Top",
       position: "CEO",
       src: "/img/team1.jpg",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis aliquet purus non elementum. Nam quis vulputate enim, congue ullamcorper risus.",
     },
     {
       name: "Paul King",
       position: "Dispatching",
       src: "/img/team2.jpg",
-      description: "Praesent mattis aliquet purus non elementum.",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis aliquet purus non elementum. Nam quis vulputate enim, congue ullamcorper risus.",
     },
     {
       name: "George Road",
       position: "Driver Manager",
       src: "/img/team3.jpg",
-      description: "Nam quis vulputate enim, congue ullamcorper risus.",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis aliquet purus non elementum. Nam quis vulputate enim, congue ullamcorper risus.",
     },
     {
       name: "John Stors",
       position: "Warehouse Manager",
       src: "/img/team4.jpg",
-      description: "Aenean condimentum, nisi a eleifend aliquet.",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis aliquet purus non elementum. Nam quis vulputate enim, congue ullamcorper risus.",
     },
   ];
   return (
@@ -39,24 +39,23 @@ export default function AboutThirdSection() {
       </div>
       <div className="flex flex-wrap justify-center py-10">
         {teamMembers.map((member, index) => (
-          <div
-            key={index}
-            className="w-full sm:w-1/2 lg:w-1/4 p-2 overflow-hidden"
-          >
-            <div className="relative group">
-              <img
-                src={member.src}
-                alt={member.name}
-                className="w-full h-auto transform transition-transform duration-300 group-hover:-translate-y-1/2"
-              />
-              <div className="absolute  bg-opacity-50 p-4 text-gray-500 opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-hover:-translate-y-1/2">
-                <p className="mb-4">{member.description}</p>
+          <div key={index} className="w-full sm:w-1/2 lg:w-1/4 p-2">
+            <div className="relative group overflow-hidden">
+              <div className="overflow-hidden">
+                <img
+                  src={member.src}
+                  alt={member.name}
+                  className="w-full h-auto transform transition-transform duration-1000 group-hover:-translate-y-1/2"
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-white bg-opacity-80 p-4 text-gray-500 transform translate-y-full transition-transform duration-1000 group-hover:translate-y-0 group-hover:opacity-100">
+                  <p className="text-2xl lg:text-base">{member.description}</p>
+                </div>
               </div>
+            </div>
               <div className=" text-center py-4">
                 <h3 className="text-xl font-semibold">{member.name}</h3>
                 <p className="text-sm text-gray-400">{member.position}</p>
               </div>
-            </div>
           </div>
         ))}
       </div>

@@ -5,7 +5,7 @@ export default function ContactBanner() {
   return (
     <div className="h-[70vh] relative flex items-end">
       <img
-        src="/img/vehicle-banner.jpg"
+        src="/img/intro-about-us.jpg"
         alt="banner"
         className="absolute top-0 left-0 w-full h-full object-cover -z-50"
       />

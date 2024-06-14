@@ -6,22 +6,21 @@ export default function News() {
     <div className="py-10">
       <div className="text-center p-6">
         <h2 className="text-first-color text-2xl md:text-3xl lg:text-4xl">
-          Professional Warehouse
+          Welcome to Professional Warehousing
         </h2>
         <h1 className="text-xl md:text-3xl lg:text-4xl">
-          Warehouse <span className="font-bold">solution</span> for every need
+          Tailored Warehouse <span className="font-bold">Solutions</span> for Every Need
         </h1>
       </div>
       <div className="max-w-screen-xl flex flex-wrap items-center justify-center gap-6 mx-auto py-10 text-md">
         <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
           <a href="#">
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-              Noteworthy technology acquisitions 2021
+              Top-Notch Service Quality
             </h5>
           </a>
           <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            Here are the biggest enterprise technology acquisitions of 2021 so
-            far, in reverse chronological order.
+            We ensure the highest quality services for your peace of mind.
           </p>
           <a
             href="#"
@@ -34,12 +33,11 @@ export default function News() {
         <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
           <a href="#">
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-              Noteworthy technology acquisitions 2021
+              Precise Handling of Valuable Goods
             </h5>
           </a>
           <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            Here are the biggest enterprise technology acquisitions of 2021 so
-            far, in reverse chronological order.
+            We handle your valuable goods with utmost care and attention.
           </p>
           <a
             href="#"
@@ -52,12 +50,11 @@ export default function News() {
         <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
           <a href="#">
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-              Noteworthy technology acquisitions 2021
+              Secure and Timely Delivery
             </h5>
           </a>
           <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            Here are the biggest enterprise technology acquisitions of 2021 so
-            far, in reverse chronological order.
+            We ensure safe and on-time delivery of your goods to their destination.
           </p>
           <a
             href="#"

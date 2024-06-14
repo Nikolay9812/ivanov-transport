@@ -13,14 +13,17 @@ export default function ServiceAbout() {
       <div className="relative w-full md:w-1/2 flex items-center">
         <div className="relative md:py-[150px] p-16 bg-white md:-ml-20 lg:-ml-32 xl:-ml-40 shadow-lg">
           <h4 className="text-2xl md:text-4xl lg:text-5xl">
-            Safe and on time delivery of your goods dolor sit amet
+            Safe and on time delivery of your goods
           </h4>
           <div className="my-4">
             <p className="text-base md:text-lg text-gray-400">
-              Lorem ipsum dolor sit amet adipisicing eiusmod tempor elementum ut
-              labore et dolore magna aliqua ad minim veniam, quis nostrud
-              exercitation. Lorem <u>ipsum</u> dolor sit amet adipisicing
-              eiusmod tempor elementum ut labore et dolore.
+              We prioritize the safe and punctual delivery of your goods. Our
+              commitment to quality ensures that each shipment arrives on time
+              and intact, giving you peace of mind throughout the process. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+              minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat.
             </p>
           </div>
           <div className="flex flex-col md:flex-row gap-4">

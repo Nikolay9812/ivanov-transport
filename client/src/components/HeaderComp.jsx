@@ -43,7 +43,6 @@ export default function HeaderComp() {
           </span>
           Transport
         </Link>
-        <LanguageSelector />
         <div className="flex items-center">
           <button
             onClick={toggleMenu}
